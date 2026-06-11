@@ -5,21 +5,21 @@
 class Aztui < Formula
   desc "k9s-style terminal UI for Azure"
   homepage "https://github.com/GoosieZA/aztui"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/GoosieZA/aztui/releases/download/v0.3.0/aztui_0.3.0_darwin_amd64.tar.gz"
-      sha256 "bbfb485b863a77fa75f833380db6bcdabfb9abe2ac2a938cb84d4a09c978bddc"
+      url "https://github.com/GoosieZA/aztui/releases/download/v0.4.0/aztui_0.4.0_darwin_amd64.tar.gz"
+      sha256 "7fa466d8732e78f9cf2bbb7f99cb6ec09d54d1c69d320901ad5ead5e84ca3431"
 
       define_method(:install) do
         bin.install "aztui"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/GoosieZA/aztui/releases/download/v0.3.0/aztui_0.3.0_darwin_arm64.tar.gz"
-      sha256 "8ad994b141322da6542710c2195ee45f209939e3469f0c666b794c6a618ac412"
+      url "https://github.com/GoosieZA/aztui/releases/download/v0.4.0/aztui_0.4.0_darwin_arm64.tar.gz"
+      sha256 "37c7fe76098393e97f8111568c736cf947d73ceddfb40cf503fbcdd121a797dd"
 
       define_method(:install) do
         bin.install "aztui"
@@ -29,15 +29,15 @@ class Aztui < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GoosieZA/aztui/releases/download/v0.3.0/aztui_0.3.0_linux_amd64.tar.gz"
-      sha256 "e9152d92afad880c0ef9c5259c5e97989b55be067b8258c45710d1410e32d7b0"
+      url "https://github.com/GoosieZA/aztui/releases/download/v0.4.0/aztui_0.4.0_linux_amd64.tar.gz"
+      sha256 "4fd20cd940fd5a4807b1ef580a4b6fb185e49d04c7f5c0c2aef46e6af4282d06"
       define_method(:install) do
         bin.install "aztui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/GoosieZA/aztui/releases/download/v0.3.0/aztui_0.3.0_linux_arm64.tar.gz"
-      sha256 "33cba063b7c281ed9013bbfbc27d1661eea83b2bfab9f30ff744ea5bd2fdca50"
+      url "https://github.com/GoosieZA/aztui/releases/download/v0.4.0/aztui_0.4.0_linux_arm64.tar.gz"
+      sha256 "e9e8364ef267aff0b92e890450f274862dfcac7192394c022f682f2d9fd95ff8"
       define_method(:install) do
         bin.install "aztui"
       end
