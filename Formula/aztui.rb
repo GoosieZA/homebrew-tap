@@ -11,7 +11,7 @@ class Aztui < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/GoosieZA/aztui/releases/download/v0.2.0/aztui_0.2.0_darwin_amd64.tar.gz"
-      sha256 "181dabab4c69f0ee4de1dd320fef335643245a2f23d348a8373906769b2100d8"
+      sha256 "b34af787339869bfb7848d89b9615c93e94ef1a41fa9aa7e0b42d2c2391287c5"
 
       define_method(:install) do
         bin.install "aztui"
@@ -19,7 +19,7 @@ class Aztui < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/GoosieZA/aztui/releases/download/v0.2.0/aztui_0.2.0_darwin_arm64.tar.gz"
-      sha256 "d276e92c2bf76f6a70f03383a8e71b11fb4d414d214e2c039f38eb302e229e08"
+      sha256 "4f7f022ad191f8905eda93f1931b5625f5f4fbb3e0f2873e5e76b243dc6cfbc7"
 
       define_method(:install) do
         bin.install "aztui"
@@ -30,14 +30,14 @@ class Aztui < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/GoosieZA/aztui/releases/download/v0.2.0/aztui_0.2.0_linux_amd64.tar.gz"
-      sha256 "f726c09e835e00d7f6d4f63616edfa853f7f1f58fd73c3b3f96cad684193684c"
+      sha256 "5173c90194d8c5a010a5f4e4c3979eec315a7003bf6b3c92a0a84804b22389d3"
       define_method(:install) do
         bin.install "aztui"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/GoosieZA/aztui/releases/download/v0.2.0/aztui_0.2.0_linux_arm64.tar.gz"
-      sha256 "12aa3b620cbf564c2e3870371e5b81db348cafa3d535d6756cc87a2ce5045e26"
+      sha256 "0a5ae76681d6e705c66965d665ec4c6aa2381c814ff7700a48da739b8cd1a35c"
       define_method(:install) do
         bin.install "aztui"
       end
